@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="418dp"
+        android:layout_height="463dp"
+        android:background="#e0e0e0"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="96dp">
+
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_reason"
+            android:textColor="#f00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/newclientCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="@string/reason1"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:onClick="onCheckboxClicked" />
+
+        <CheckBox
+            android:id="@+id/defaulterCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="@string/reason2"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:onClick="onCheckboxClicked" />
+
+        <CheckBox
+            android:id="@+id/tbCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="@string/reason3"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:onClick="onCheckboxClicked" />
+
+        <CheckBox
+            android:id="@+id/pmtctCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="@string/reason4"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:onClick="onCheckboxClicked" />
+
+        <CheckBox
+            android:id="@+id/heiCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="@string/reason5"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:onClick="onCheckboxClicked" />
+
+        <CheckBox
+            android:id="@+id/viralCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="@string/reason6"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:onClick="onCheckboxClicked" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

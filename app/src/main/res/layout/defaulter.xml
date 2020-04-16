@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0e0e0"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/defaulterformTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/defaulterform"
+            android:textColor="#f00"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/clientfoundTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clientfound"
+                android:textColor="#101010"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/clientfound_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reasonfordefaultingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reasonfordefaulting"
+            android:textColor="#101010"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/reasonfordefaultingEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/defaulteractiontakenTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/defaulteractiontaken"
+            android:textColor="#101010"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/callclinicianCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="10dp"
+            android:text="@string/defaulteraction1"
+            android:textColor="#101010"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/accompanyclientCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="10dp"
+            android:text="@string/defaulteraction2"
+            android:textColor="#101010"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/collectdrugsCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="10dp"
+            android:text="@string/defaulteraction3"
+            android:textColor="#101010"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/defaulteroutcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/defaulteroutcome"
+            android:textColor="#101010"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/selftransferredCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="10dp"
+            android:text="@string/defaulteroutcome1"
+            android:textColor="#101010"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:id="@+id/selftransferredLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/selftransferredTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selftransferredto"
+                android:textColor="#101010"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/selftransferredEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/clientdiedCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="10dp"
+            android:text="@string/defaulteroutcome2"
+            android:textColor="#101010"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/shiftedCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="10dp"
+            android:text="@string/defaulteroutcome3"
+            android:textColor="#101010"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/shiftedLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/shiftedtoTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shiftedto"
+                android:textColor="#101010"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/shiftedtoEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
