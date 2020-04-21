@@ -28,7 +28,10 @@
     <string name="stressful">"Is the client suffering from any stressful situation? "</string>
     <string name="sexualpartner">"Is Sexual partner tested: "</string>
     <string name="adr">Does the client have any ADR :</string>
+    <string name="yesadr">If yes, specify</string>
     <string name="matchtca">Are the pills matching the TCA :</string>
+    <string name="issuedselftestkit">"If No, Was the client issued a Self-test Kit "</string>
+    <string name="testresults">If yes, what was the test result?</string>
 
 
     <string-array name="yes_no">
@@ -75,4 +78,7 @@
     <string name="nodrugstimereason">" If No, Specify the reason  "</string>
     <string name="viralmdt">Is the client on MDT :</string>
     <string name="nomdtreason">" If No, Specify the reason : "</string>
+    <string name="btn">Save</string>
+
+
 </resources>

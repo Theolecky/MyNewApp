@@ -3,6 +3,8 @@ package com.example.mynavapp;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.CheckBox;
+import android.widget.LinearLayout;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -19,6 +21,8 @@ import androidx.appcompat.widget.Toolbar;
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+
+    //public LinearLayout newlinearlayout = (LinearLayout) findViewById(R.id.newclientlinearLayout);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
     }
 
     @Override
@@ -59,5 +64,39 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    ////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////
+    /////////////// MY FUNCTIONS /////////////////////////
+    ////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////
+    public void onCheckboxClicked(View view) {
+        // Is the view now checked?
+        boolean checked = ((CheckBox) view).isChecked();
+
+        // Check which checkbox was clicked
+        switch(view.getId()) {
+            case R.id.newclientCheckBox:
+                if (checked) {
+                    // Put new client form here
+                    //newlinearlayout.setVisibility(View.VISIBLE);
+
+                }
+                else {
+                    // Remove the new client form
+                    //newlinearlayout.setVisibility(View.GONE);
+                }
+                break;
+            case R.id.defaulterCheckBox:
+                if (checked) {
+                    // Defaulter form
+                }
+                else {
+                    // Remove defaulter form
+                }
+                break;
+            // TODO: Veggie sandwich
+        }
     }
 }
